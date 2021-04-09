@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Playfair+Display&display=swap');
+
+body {
+
+  color: #222;
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+
+header {
+  background-color: #eee;
+  font-family: "Oswald", "Helvetica", sans-serif;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "heading heading heading"
+  "nav     nav     nav"
+}
+
+nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+}
+
+main {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-gap: 15px;
+  grid-template-areas:
+  "intro intro flag"
+  "pas  geography  geography"
+  "economy  economy museum"
+}
+
+a:link {
+  color: #C8102E;
+}
+
+a:visited {
+  color: #228C22;
+}
+
+a:hover {
+  color: #CC8899;
+}
+
+a:active {
+  color: #FEE12B;
+}
+
+/* #colomn-one {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "nav       flag"
+} */
+
+#nav{
+  grid-area: nav;
+}
+
+#flag {
+  grid-area: flag;
+  float:left;
+  background-color: #eee;
+}
+
+#heading {
+  grid-area: heading;
+  font-size: 48px;
+  margin-left: 36px;
+  margin-top: -36px;
+  margin-bottom: -72px;
+
+}
+
+#introduction {
+  grid-area: intro;
+  background-color: #eee;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#people-and-society {
+  grid-area: pas;
+  background-color: #eee;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#geography {
+  grid-area: geography;
+  background-color: #eee;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#economy {
+  grid-area: economy;
+  background-color: #eee;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#museum {
+  grid-area: museum;
+  background-color: #eee;
+}
