@@ -1,116 +1,300 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=EB+Garamond&family=Gentium+Basic&family=Julius+Sans+One&family=Nanum+Gothic&display=swap');
+
+
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 54px;
+}
 
 body {
-
-  color: #222;
   max-width: 960px;
   margin: 0 auto;
-
+  color: #0d335d;
+  background-color: #fff3e6;
 }
-
-
 header {
-  background-color: #eee;
-  font-family: "Oswald", "Helvetica", sans-serif;
-  font-weight: 500;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-  "heading heading heading"
-  "nav     nav     nav"
-}
-
-nav ul {
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-
+  background-color: #c1a1d3;
 }
 
 main {
-  font-family: "Playfair Display", "Times New Roman", serif;
-  padding-top: 15px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 3fr;
-  grid-gap: 15px;
-  grid-template-areas:
-  "intro intro flag"
-  "pas  geography  geography"
-  "economy  economy museum"
+  background-color: #c1a1d3;
 }
 
+p{
+  font-family: "EB Garamond", sans-serif;
+  font-size: 20px;
+}
+
+#finalheader {
+  background-color: #c1a1d3;
+  margin-top: 303px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "head head head"
+  "fdisc fdisc fdisc"
+  "nav  nav   nav"
+
+
+ }
+nav ul {
+  font-family: "Julius Sans One", sans-serif;
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+
 a:link {
-  color: #C8102E;
+  color: #0d335d;
 }
 
 a:visited {
-  color: #228C22;
+  color: #fff3e6;
 }
 
 a:hover {
-  color: #CC8899;
+  color: #1a508b;
 }
 
 a:active {
-  color: #FEE12B;
+  color: #c1a1d3;
 }
 
-/* #colomn-one {
+figure {
+  margin: 0;
+}
+
+#infohead {
+  color: ;
+  background-color: ;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr;
   grid-template-areas:
-    "nav       flag"
-} */
+  "infohead infohead"
+}
 
-#nav{
+#imain {
+  padding-bottom: 202px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "info  idisc"
+}
+
+#tmain {
+  background-color: #c1a1d3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "tad             tdisc"
+  "torontomockup1 torontomockup1"
+  "torontomockup2 torontomockup2"
+  "torontobillboard torontobillboard"
+  "torontobillboardmockup torontobillboardmockup"
+}
+
+#smain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "sad         sdisc"
+  "seattlemockup1 seattlemockup1"
+  "seattlemockup2 seattlemockup2"
+  "seattlebillboard seattlebillboard"
+  "seattlebillboardmockup seattlebillboardmockup"
+
+}
+
+#mmain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "spread1 mdisc"
+}
+
+#infohead {
+  grid-area: infohead;
+  margin-top: -40px;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+
+}
+
+#info {
+  grid-area: info;
+}
+
+
+
+#idisc {
+  grid-area: idisc;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#head {
+  grid-area: head;
+  padding-left: 2px;
+
+}
+#fdisc {
+  grid-area: fdisc;
+}
+
+#nav {
   grid-area: nav;
+  margin-top: -38px;
 }
 
-#flag {
-  grid-area: flag;
-  float:left;
-  background-color: #eee;
+#tad{
+  grid-area: tad;
 }
 
-#heading {
-  grid-area: heading;
-  font-size: 48px;
-  margin-left: 36px;
-  margin-top: -36px;
-  margin-bottom: -72px;
-
-}
-
-#introduction {
-  grid-area: intro;
-  background-color: #eee;
+#tdisc{
+  grid-area: tdisc;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-#people-and-society {
-  grid-area: pas;
-  background-color: #eee;
-  padding-left: 10px;
-  padding-right: 10px;
+#thead {
+  margin-top: -40px;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+
 }
 
-#geography {
-  grid-area: geography;
-  background-color: #eee;
-  padding-left: 10px;
-  padding-right: 10px;
+#torontomockup1 {
+  grid-area: torontomockup1;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-#economy {
-  grid-area: economy;
-  background-color: #eee;
-  padding-left: 10px;
-  padding-right: 10px;
+#torontomockup2 {
+  grid-area: torontomockup2;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-#museum {
-  grid-area: museum;
-  background-color: #eee;
+#torontobillboard {
+  grid-area: torontobillboard;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#torontobillboardmockup {
+  grid-area: torontobillboardmockup;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#shead {
+  grid-area: shead;
+  margin-top: -40px;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+
+}
+
+#sad {
+  grid-area: sad;
+}
+
+#sdisc {
+  grid-area: sdisc;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#seattlemockup1 {
+  grid-area: seattlemockup1;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#seattlemockup2 {
+  grid-area: seattlemockup2;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#seattlebillboard {
+  grid-area: seattlebillboard;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#seattlebillboardmockup {
+  grid-area: seattlebillboardmockup;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#mhead {
+  grid-area: mhead;
+  margin-top: -40px;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 0;
+  border-bottom: 2px;
+  border-bottom-style: solid;
+
+}
+#mmain {
+  grid-area: mmain;
+}
+
+#mdisc {
+  grid-area: mdisc;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+#spread1 {
+
+}
+
+#spread2 {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+#spread3 {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#spread4 {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#spread5 {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
